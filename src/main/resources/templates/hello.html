@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Getting Started: Serving Web Content</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class = "container">
+        <div class = "content">
+            <h1>Warning</h1>
+              <p class = "time">
+                    现在是北京时间：<span id = "currentTime"/>
+                    <!-- <span  th:text="${time}"/> -->
+            </p>
+		    <p>
+		           <h3><span th:text="${name}"/>,</h3> 
+		           <p th:text="${content }"/>
+            </p>
+        </div>
+    </div>
+       
+    <script src="./js/main.js"></script>
+</body>
+</html>

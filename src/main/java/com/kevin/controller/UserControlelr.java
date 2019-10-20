@@ -17,11 +17,10 @@ public class UserControlelr {
 	
 	@GetMapping("/hello")
 	public String hello(Model model) {
-		String name = "肥婆敏";
-		String time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-		String content ="你这死肥猪，快点起床吃饭啦！";
+		String name = "kevin";
+//		String time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+		String content ="Drop the phone and study";
 		model.addAttribute("name", name);
-//		model.addAttribute("time", time);
 		model.addAttribute("content", content);
 		return "hello";
 	}
